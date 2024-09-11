@@ -28,15 +28,22 @@ const vectorLayer = new VectorLayer({
     format: new GeoJSON()
   }),
   style: function (feature) {
+    const visited = feature.get("VISITED");
+    if(visited){ //couleur de remplissage = vert si je suis déjà allé dans cet état
+      var stateColor = 'rgba(0, 255, 0, 0.6)';
+    }
+    else{ // couleur de remplissage = orange si je ne suis jamais allé dans cet état
+      var stateColor = 'rgba(255, 165, 0, 0.6)';
+    }
     return new Style({
       fill: new Fill({
-        color: 'rgba(255, 255, 255, 0.6)' // Couleur de remplissage
+        color: stateColor  // Couleur de remplissage
       }),
       stroke: new Stroke({
         color: '#319FD3', // Couleur du contour
         width: 1 // Largeur du contour
       })
-    });
+    })
   }
 });
 

@@ -6,7 +6,8 @@
       "id": 0,
       "properties": {
         "STATE_CODE": "1",
-        "STATE_NAME": "New South Wales"
+        "STATE_NAME": "New South Wales",
+        "VISITED" : true
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -966,7 +967,10 @@
     {
       "type": "Feature",
       "id": 1,
-      "properties": { "STATE_CODE": "2", "STATE_NAME": "Victoria" },
+      "properties": { 
+        "STATE_CODE": "2", 
+        "STATE_NAME": "Victoria",
+        "VISITED" : true },
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -1663,7 +1667,10 @@
     {
       "type": "Feature",
       "id": 2,
-      "properties": { "STATE_CODE": "3", "STATE_NAME": "Queensland" },
+      "properties": { 
+        "STATE_CODE": "3", 
+        "STATE_NAME": "Queensland",
+        "VISITED" : true },
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -4581,7 +4588,9 @@
     {
       "type": "Feature",
       "id": 3,
-      "properties": { "STATE_CODE": "4", "STATE_NAME": "South Australia" },
+      "properties": { "STATE_CODE": "4",
+       "STATE_NAME": "South Australia",
+       "VISITED" : false },
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -5387,7 +5396,10 @@
     {
       "type": "Feature",
       "id": 4,
-      "properties": { "STATE_CODE": "5", "STATE_NAME": "Western Australia" },
+      "properties": { 
+        "STATE_CODE": "5", 
+        "STATE_NAME": "Western Australia",
+        "VISITED" : true },
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -9746,7 +9758,10 @@
     {
       "type": "Feature",
       "id": 5,
-      "properties": { "STATE_CODE": "6", "STATE_NAME": "Tasmania" },
+      "properties": { 
+        "STATE_CODE": "6", 
+        "STATE_NAME": "Tasmania",
+        "VISITED" : false },
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -11165,7 +11180,10 @@
     {
       "type": "Feature",
       "id": 6,
-      "properties": { "STATE_CODE": "7", "STATE_NAME": "Northern Territory" },
+      "properties": { 
+        "STATE_CODE": "7", 
+        "STATE_NAME": "Northern Territory",
+        "VISITED" : false },
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -13302,7 +13320,8 @@
       "id": 7,
       "properties": {
         "STATE_CODE": "8",
-        "STATE_NAME": "Australian Capital Territory"
+        "STATE_NAME": "Australian Capital Territory",
+        "VISITED" : false
       },
       "geometry": {
         "type": "Polygon",
