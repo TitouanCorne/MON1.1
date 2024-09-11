@@ -1,0 +1,17 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+      {
+        "type": "Feature",
+        "id": 0,
+        "properties": {
+          "CITY_NAME": "Sydney"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [151.2, -33.8]
+        }
+      }
+    ]
+  }
+  
