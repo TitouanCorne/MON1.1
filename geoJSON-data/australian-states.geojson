@@ -6,6 +6,7 @@
       "id": 0,
       "properties": {
         "STATE_CODE": "1",
+        "TYPE" : "State",
         "STATE_NAME": "New South Wales",
         "VISITED" : true
       },
@@ -968,7 +969,8 @@
       "type": "Feature",
       "id": 1,
       "properties": { 
-        "STATE_CODE": "2", 
+        "STATE_CODE": "2",
+        "TYPE" : "State", 
         "STATE_NAME": "Victoria",
         "VISITED" : true },
       "geometry": {
@@ -1668,7 +1670,8 @@
       "type": "Feature",
       "id": 2,
       "properties": { 
-        "STATE_CODE": "3", 
+        "STATE_CODE": "3",
+        "TYPE" : "State", 
         "STATE_NAME": "Queensland",
         "VISITED" : true },
       "geometry": {
@@ -4588,7 +4591,9 @@
     {
       "type": "Feature",
       "id": 3,
-      "properties": { "STATE_CODE": "4",
+      "properties": { 
+        "STATE_CODE": "4",
+        "TYPE" : "State",
        "STATE_NAME": "South Australia",
        "VISITED" : false },
       "geometry": {
@@ -5397,7 +5402,8 @@
       "type": "Feature",
       "id": 4,
       "properties": { 
-        "STATE_CODE": "5", 
+        "STATE_CODE": "5",
+        "TYPE" : "State", 
         "STATE_NAME": "Western Australia",
         "VISITED" : true },
       "geometry": {
@@ -9759,7 +9765,8 @@
       "type": "Feature",
       "id": 5,
       "properties": { 
-        "STATE_CODE": "6", 
+        "STATE_CODE": "6",
+        "TYPE" : "State", 
         "STATE_NAME": "Tasmania",
         "VISITED" : false },
       "geometry": {
@@ -11181,7 +11188,8 @@
       "type": "Feature",
       "id": 6,
       "properties": { 
-        "STATE_CODE": "7", 
+        "STATE_CODE": "7",
+        "TYPE" : "State", 
         "STATE_NAME": "Northern Territory",
         "VISITED" : false },
       "geometry": {
@@ -13320,6 +13328,7 @@
       "id": 7,
       "properties": {
         "STATE_CODE": "8",
+        "TYPE" : "State",
         "STATE_NAME": "Australian Capital Territory",
         "VISITED" : false
       },

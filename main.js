@@ -88,6 +88,9 @@ const map = new Map({
 
 // Ajout d'une div pour afficher les informations du polygone survolé
 const infoDiv = document.getElementById('info');
+const photoDiv = document.getElementById('photo');
+const photoVille = document.getElementById('photo_ville');
+
 
 // Écouteur pour pointermove pour détecter les survols de polygones
 map.on('pointermove', function (evt) {
@@ -98,10 +101,37 @@ map.on('pointermove', function (evt) {
   if (feature) {
     // Récupérer les propriétés du polygone
     const properties = feature.getProperties();
-    infoDiv.innerHTML = `Etat: ${properties.STATE_NAME}`;
+    if (properties.TYPE == 'State'){
+      infoDiv.innerHTML = `Etat: ${properties.STATE_NAME}`;
+    }
+    else if (properties.TYPE == 'City'){
+      infoDiv.innerHTML = `Ville : ${properties.CITY_NAME} <br>
+                           Hôte(s) : ${properties.HOST || 'Airbnb/Hôtel'} <br>
+                           Période : ${properties.PERIOD}`;
+    }
     infoDiv.style.display= 'block';
   }else {
     // Ne rien afficher lorsque la souris ne survole rien
     infoDiv.style.display= 'none';
+  }
+});
+
+// Écouteur pour click pour afficher une photo lorsque l'on clique sur une ville
+map.on('click', function (evt) {
+  const feature = map.forEachFeatureAtPixel(evt.pixel, function (feature) {
+    return feature;
+  });
+
+  if (feature) {
+    // Récupérer les propriétés de la ville
+    const properties = feature.getProperties();
+    if (properties.TYPE == 'City'){
+      photoDiv.style.display = 'block';
+      photoVille.src = properties.IMG;
+      photoVille.style.display = 'block'; // Afficher l'image
+    }
+  }else {
+    photoVille.style.display = 'none'; 
+    photoDiv.style.display = 'none';
   }
 });
